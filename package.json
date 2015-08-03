@@ -1,11 +1,11 @@
 {
   "name": "coyno-address-updater",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A library to manage transactions for Coyno.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coyno/coyno-transaction-processor.git"
+    "url": "https://github.com/coyno/coyno-address-updater.git"
   },
   "author": "Coyno <coyno@coyno.com>",
   "contributors": [
@@ -15,22 +15,19 @@
     }
   ],
   "scripts": {
-    "lint": "gulp lint",
-    "test": "gulp test",
-    "coverage": "gulp coverage",
-    "build": "gulp",
-    "start": "node index.js"
+    "test": "exit 0",
+    "start": "node start.js"
   },
   "license": "All rights reserved",
   "bugs": {
-    "url": "https://github.com/coyno/coyno-transfers/issues"
+    "url": "https://github.com/coyno/coyno-address-updater/issues"
   },
-  "homepage": "https://github.com/coyno/coyno-transfers",
+  "homepage": "https://github.com/coyno/coyno-address-updater",
   "dependencies": {
     "async": "0.9.x",
     "coyno-dispatcher": "0.0.x",
     "coyno-kue": "0.0.x",
-    "coyno-log": "0.0.x",
+    "coyno-log": "^0.1.0",
     "coyno-mongo": "0.1.x",
     "debug": "2.1.x",
     "lodash": "3.8.x"
