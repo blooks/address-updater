@@ -30,7 +30,7 @@
     "async": "0.9.x",
     "coyno-dispatcher": "0.0.x",
     "coyno-kue": "0.0.x",
-    "coyno-log": "0.0.x",
+    "coyno-log": ">=0.1.0 <0.2",
     "coyno-mongo": "0.1.x",
     "debug": "2.1.x",
     "lodash": "3.8.x"
