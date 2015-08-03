@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coyno/coyno-transaction-processor.git"
+    "url": "https://github.com/coyno/coyno-address-updater.git"
   },
   "author": "Coyno <coyno@coyno.com>",
   "contributors": [
@@ -20,9 +20,9 @@
   },
   "license": "All rights reserved",
   "bugs": {
-    "url": "https://github.com/coyno/coyno-transfers/issues"
+    "url": "https://github.com/coyno/coyno-address-updater/issues"
   },
-  "homepage": "https://github.com/coyno/coyno-transfers",
+  "homepage": "https://github.com/coyno/coyno-address-updater",
   "dependencies": {
     "async": "0.9.x",
     "coyno-dispatcher": "0.0.x",
