@@ -1,19 +1,10 @@
 machine:
+  node:
+    version: 6
   services:
     - docker
 
 deployment:
-  staging:
-    branch: develop
-    commands:
-      - docker info
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t tutum.co/levino/coyno-address-updater:staging .
-      - docker push tutum.co/levino/coyno-address-updater:staging
-  release:
-    branch: master
-    commands:
-      - npm publish
   stable:
     branch: stable
     commands:
