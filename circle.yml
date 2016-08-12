@@ -6,8 +6,8 @@ machine:
 
 deployment:
   stable:
-    branch: stable
+    branch: develop
     commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS tutum.co
-      - docker build -t tutum.co/levino/coyno-address-updater .
-      - docker push tutum.co/levino/coyno-address-updater
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker build -t blooks/coyno-address-updater:develop .
+      - docker push blooks/levino/coyno-address-updater:develop
