@@ -1,11 +1,11 @@
 {
-  "name": "coyno-address-updater",
+  "name": "@blooks/address-updater",
   "version": "0.0.3",
-  "description": "A library to manage transactions for Coyno.",
+  "description": "A library to manage transactions for Blooks.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coyno/coyno-address-updater.git"
+    "url": "https://github.com/blooks/blooks-address-updater.git"
   },
   "author": "Coyno <coyno@coyno.com>",
   "contributors": [
@@ -15,35 +15,35 @@
     }
   ],
   "scripts": {
-    "test": "exit 0",
+    "test": "mocha test",
     "start": "node start.js"
   },
   "license": "All rights reserved",
   "bugs": {
-    "url": "https://github.com/coyno/coyno-address-updater/issues"
+    "url": "https://github.com/blooks/blooks-address-updater/issues"
   },
-  "homepage": "https://github.com/coyno/coyno-address-updater",
+  "homepage": "https://github.com/blooks/blooks-address-updater",
   "dependencies": {
-    "async": "0.9.x",
-    "coyno-dispatcher": "0.0.x",
-    "coyno-kue": "0.0.x",
-    "coyno-log": "^0.1.0",
-    "coyno-mongo": "0.1.x",
-    "debug": "2.1.x",
-    "lodash": "3.8.x"
+    "@blooks/log": "^0.2.2",
+    "@blooks/mongo": "^0.2.2",
+    "kue": "^0.11.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true
+    },
+    "extends": "standard"
+  },
+  "standard": {
+    "env": [
+      "node",
+      "mocha"
+    ]
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-jshint": "^1.10.0",
-    "gulp-mocha": "^2.0.1",
-    "gulp-shell": "^0.4.1",
-    "gulp-util": "^3.0.4",
-    "jsdoc-to-markdown": "^1.0.3",
-    "mocha": "^2.2.4",
-    "more-fs": "^0.5.0",
-    "nodemon": "^1.3.7",
-    "q": "^1.2.1",
-    "should": "^6.0.1",
-    "through2": "^0.6.5"
+    "eslint": "^3.2.2",
+    "mocha": "^3.0.2",
+    "standard": "^7.1.2"
   }
 }
