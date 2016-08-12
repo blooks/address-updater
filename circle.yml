@@ -9,11 +9,11 @@ deployment:
     branch: develop
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t blooks/coyno-address-updater:develop .
-      - docker push blooks/levino/coyno-address-updater:develop
+      - docker build -t blooks/address-updater:develop .
+      - docker push blooks/levino/address-updater:develop
   versionbuild:
     tag: /v[0-9]+(\.[0-9]+)*/
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t blooks/coyno-address-updater:$CIRCLE_TAG .
-      - docker push blooks/levino/coyno-address-updater:$CIRCLE_TAG
+      - docker build -t blooks/address-updater:$CIRCLE_TAG .
+      - docker push blooks/levino/address-updater:$CIRCLE_TAG
