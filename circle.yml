@@ -5,12 +5,6 @@ machine:
     - docker
 
 deployment:
-  develop:
-    branch: develop
-    commands:
-      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker build -t blooks/address-updater:develop .
-      - docker push blooks/address-updater:develop
   master:
     branch: master
     commands:
