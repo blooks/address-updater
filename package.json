@@ -1,6 +1,6 @@
 {
   "name": "@blooks/address-updater",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A library to manage transactions for Blooks.",
   "main": "index.js",
   "repository": {
